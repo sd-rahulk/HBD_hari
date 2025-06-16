@@ -55,7 +55,7 @@ function initTyping() {
         wpm = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
         
         wpmTag.innerText = wpm;
-        if (wpm > 25) {
+        if (wpm > 40) {
             location.href = "https://premhappybirthday.web.app"; // Redirect to another page if WPM is greater than 40
 
         }
