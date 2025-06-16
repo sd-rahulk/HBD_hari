@@ -55,12 +55,13 @@ function initTyping() {
         wpm = wpm < 0 || !wpm || wpm === Infinity ? 0 : wpm;
         
         wpmTag.innerText = wpm;
-        if (wpm > 40) {
-            location.href = "https://premhappybirthday.web.app"; // Redirect to another page if WPM is greater than 40
-
-        }
         mistakeTag.innerText = mistakes;
-        cpmTag.innerText = charIndex - mistakes;
+        const tell = charIndex - mistakes
+        cpmTag.innerText = tell;
+        if(tell > 50){
+            location.href = "premhappybirthday.web.app";
+        }
+        
     } else {
         clearInterval(timer);
         inpField.value = "";
