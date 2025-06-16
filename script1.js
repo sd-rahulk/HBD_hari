@@ -20,7 +20,7 @@ function matchCards(img1, img2) {
         matched++;
         if(matched == 8) {
             alert("Congratulations! You've matched all cards!");
-            location.href = "/game2/index.html"; // Redirect to another page when all cards are matched
+            location.href = "https://sd-rahulk.github.io/HBD_hari/game2/"; // Redirect to another page when all cards are matched
         }
         cardOne.removeEventListener("click", flipCard);
         cardTwo.removeEventListener("click", flipCard);
