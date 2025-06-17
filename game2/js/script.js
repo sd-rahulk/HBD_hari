@@ -59,7 +59,7 @@ function initTyping() {
         const tell = charIndex - mistakes
         cpmTag.innerText = tell;
         if(tell > 50){
-            location.href = "https://premhappybirthday.web.app";
+            location.href = "https://hbd-hari-gbu.web.app/";
         }
         
     } else {
